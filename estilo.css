@@ -1,9 +1,122 @@
 /* Importa o arquivo CSS que importa a fonte Ravie */
 
 @import "fonts/ravie.css";
+* {
+    /*padrao*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
 
-/*teste*/
+#ticket {
+    position: fixed;
+    top: 295px;
+    left: -70px;
+    transition: left 200ms ease-out;
+}
 
+#ticket:hover {
+    left: -1px;
+}
 
-/*teste2
-*/
+#cardapio {
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 646px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid #AAC0AE;
+    font-size: 14px;
+    color: #333;
+    line-height: 2em;
+    padding: 0 20px 60px;
+    margin-left: auto;
+}
+
+#cardapio h3 {
+    margin-top: 30px;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+#cardapio h3:first-of-type {
+    margin-top: 15px;
+}
+
+#cardapio span {
+    float: right;
+    clear: right;
+}
+
+#lateral {
+    z-index: 100;
+    position: absolute;
+    left: -10px;
+    top: 10px;
+}
+
+#lateral h2 {
+    position: relative;
+    transform: rotate(-90deg);
+    font-size: 48px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #333;
+    right: 50px;
+    top: 90px
+}
+
+#bolhas {
+    position: relative;
+    top: 215px;
+    left: 40px;
+}
+
+#peixe {
+    position: relative;
+    top: 330px;
+    left: -130px;
+}
+
+main {
+    margin-right: 0;
+}
+
+footer {
+    margin: 46px 15px 25px 0;
+    margin-left: auto;
+    text-align: right;
+}
+
+article {
+    /*overflow: auto;*/
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    background: linear-gradient(180deg, rgba(246, 241, 178, 1) 5%, rgba(69, 153, 178, 1) 100%);
+    border: 1px solid #D3D3D3;
+}
+
+header {
+    margin-top: 20px;
+    margin-left: 180px;
+}
+
+header h1 {
+    font-family: 'Ravie';
+    font-size: 36px;
+    color: #E90C0C;
+    margin-right: 60px;
+}
+
+header h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    color: #333;
+    margin-left: 130px;
+}
+
+header span {
+    color: #D027AA
+}
